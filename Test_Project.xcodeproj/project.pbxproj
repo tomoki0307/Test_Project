@@ -15,6 +15,8 @@
 		555FE2AA23CCD3EB0066183F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 555FE2A823CCD3EB0066183F /* LaunchScreen.storyboard */; };
 		555FE2B523CCD3EB0066183F /* Test_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555FE2B423CCD3EB0066183F /* Test_ProjectTests.swift */; };
 		555FE2C023CCD3EB0066183F /* Test_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555FE2BF23CCD3EB0066183F /* Test_ProjectUITests.swift */; };
+		55C171A623D050230096988A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C171A523D050230096988A /* MapView.swift */; };
+		55C171A823D057FD0096988A /* OriginalTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C171A723D057FD0096988A /* OriginalTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		555FE2BB23CCD3EB0066183F /* Test_ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test_ProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		555FE2BF23CCD3EB0066183F /* Test_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_ProjectUITests.swift; sourceTree = "<group>"; };
 		555FE2C123CCD3EB0066183F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55C171A523D050230096988A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		55C171A723D057FD0096988A /* OriginalTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 				555FE2A123CCD3E90066183F /* ContentView.swift */,
 				555FE2A323CCD3EB0066183F /* Assets.xcassets */,
 				555FE2A823CCD3EB0066183F /* LaunchScreen.storyboard */,
+				55C171A523D050230096988A /* MapView.swift */,
+				55C171A723D057FD0096988A /* OriginalTabView.swift */,
 				555FE2AB23CCD3EB0066183F /* Info.plist */,
 				555FE2A523CCD3EB0066183F /* Preview Content */,
 			);
@@ -267,7 +273,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C171A823D057FD0096988A /* OriginalTabView.swift in Sources */,
 				555FE29E23CCD3E90066183F /* AppDelegate.swift in Sources */,
+				55C171A623D050230096988A /* MapView.swift in Sources */,
 				555FE2A023CCD3E90066183F /* SceneDelegate.swift in Sources */,
 				555FE2A223CCD3E90066183F /* ContentView.swift in Sources */,
 			);

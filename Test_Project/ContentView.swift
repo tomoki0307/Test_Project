@@ -9,12 +9,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selectorIndex = 0
+    @State private var numbers = ["Map","Message"]
+    
+    
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            VStack(alignment: .leading) {
+                Text("Map")
+                    .font(.title)
+                HStack(alignment: .top) {
+                    Text("Joshua Tree National Park")
+                        .font(.subheadline)
+                }
+                
+                MapView()
+                    .frame(height: 300)
+            }
+        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ContentView_Preview: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
