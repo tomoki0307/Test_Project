@@ -9,23 +9,48 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var selectorIndex = 0
-    @State private var numbers = ["Map","Message"]
-    
-    
+    @State private var show_modal: Bool = false
+    @State private var MenuIndex = 0
+    @State private var selected = 0
+    var menu = ["sample1","sample2","sample3"]
+    var test = "test1"
     var body: some View {
+        
         VStack {
             VStack(alignment: .leading) {
                 Text("Map")
                     .font(.title)
-                HStack(alignment: .top) {
-                    Text("Joshua Tree National Park")
-                        .font(.subheadline)
+//                NavigationView{
+//                    Form{
+//                        Picker(selection: $selected,
+//                               label:Text("Menu")){
+//                                ForEach(0..<menu.count){
+//                                    Text(self.menu[$0])
+//                                }
+//                        }
+//                    }.frame(height:60)
+//                }
+//                .frame(height: 50.0)
+                Button(action: {
+                    print("Button Pushed")
+                    self.show_modal = true
+                }) {
+                    HStack{
+                        Text("Menu:")
+                        Spacer()
+                        Text("\(menu[selected])")
+                        Image(systemName:"arrowtriangle.down.fill")
+                    }
+                }.padding(.horizontal, 15.0).sheet(isPresented: self.$show_modal) {
+                    MenuModalView(select: self.$selected)
                 }
                 
-                MapView()
-                    .frame(height: 300)
-            }
+                
+            }.frame(height:70)
+            MapView()
+            
+            
+            
         }
     }
 }

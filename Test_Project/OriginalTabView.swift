@@ -8,7 +8,6 @@
 
 import SwiftUI
 
-// https://developer.apple.com/documentation/swiftui/tabview
 struct OriginalTabView: View {
     @State private var selection = 0
     
@@ -34,7 +33,7 @@ struct OriginalTabView: View {
     }
 }
 
-struct ContentView_20191120_Previews: PreviewProvider {
+struct OriginalTabView_Previews: PreviewProvider {
     static var previews: some View {
         OriginalTabView()
     }

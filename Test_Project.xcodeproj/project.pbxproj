@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5551449123FA5A37009F609E /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551449023FA5A37009F609E /* SwiftUIView.swift */; };
 		555FE29E23CCD3E90066183F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555FE29D23CCD3E90066183F /* AppDelegate.swift */; };
 		555FE2A023CCD3E90066183F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555FE29F23CCD3E90066183F /* SceneDelegate.swift */; };
 		555FE2A223CCD3E90066183F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555FE2A123CCD3E90066183F /* ContentView.swift */; };
@@ -17,6 +18,8 @@
 		555FE2C023CCD3EB0066183F /* Test_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555FE2BF23CCD3EB0066183F /* Test_ProjectUITests.swift */; };
 		55C171A623D050230096988A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C171A523D050230096988A /* MapView.swift */; };
 		55C171A823D057FD0096988A /* OriginalTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C171A723D057FD0096988A /* OriginalTabView.swift */; };
+		55C171AA23D090C80096988A /* MenuModaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C171A923D090C80096988A /* MenuModaView.swift */; };
+		55C171AC23DC156B0096988A /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C171AB23DC156B0096988A /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5551449023FA5A37009F609E /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		555FE29A23CCD3E90066183F /* Test_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		555FE29D23CCD3E90066183F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		555FE29F23CCD3E90066183F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 		555FE2C123CCD3EB0066183F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55C171A523D050230096988A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		55C171A723D057FD0096988A /* OriginalTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalTabView.swift; sourceTree = "<group>"; };
+		55C171A923D090C80096988A /* MenuModaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModaView.swift; sourceTree = "<group>"; };
+		55C171AB23DC156B0096988A /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +110,10 @@
 			isa = PBXGroup;
 			children = (
 				555FE29D23CCD3E90066183F /* AppDelegate.swift */,
+				5551449023FA5A37009F609E /* SwiftUIView.swift */,
+				55C171AB23DC156B0096988A /* Profile.swift */,
 				555FE29F23CCD3E90066183F /* SceneDelegate.swift */,
+				55C171A923D090C80096988A /* MenuModaView.swift */,
 				555FE2A123CCD3E90066183F /* ContentView.swift */,
 				555FE2A323CCD3EB0066183F /* Assets.xcassets */,
 				555FE2A823CCD3EB0066183F /* LaunchScreen.storyboard */,
@@ -274,9 +283,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				55C171A823D057FD0096988A /* OriginalTabView.swift in Sources */,
+				55C171AC23DC156B0096988A /* Profile.swift in Sources */,
+				5551449123FA5A37009F609E /* SwiftUIView.swift in Sources */,
 				555FE29E23CCD3E90066183F /* AppDelegate.swift in Sources */,
 				55C171A623D050230096988A /* MapView.swift in Sources */,
 				555FE2A023CCD3E90066183F /* SceneDelegate.swift in Sources */,
+				55C171AA23D090C80096988A /* MenuModaView.swift in Sources */,
 				555FE2A223CCD3E90066183F /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,19 +9,30 @@
 import SwiftUI
 import MapKit
 
+struct Landmark {
+    let id: String
+    let name: String
+    let location: CLLocationCoordinate2D
+}
+
 struct MapView: UIViewRepresentable {
+    
+    
     func makeUIView(context: Context) -> MKMapView {
         MKMapView(frame: .zero)
     }
 
     func updateUIView(_ view: MKMapView, context: Context) {
         let coordinate = CLLocationCoordinate2D(
-            latitude: 34.011286, longitude: -116.166868)
-        let span = MKCoordinateSpan(latitudeDelta: 2.0, longitudeDelta: 2.0)
+            latitude: 35.3955, longitude: 139.4245)
+        let span = MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
         let region = MKCoordinateRegion(center: coordinate, span: span)
         view.setRegion(region, animated: true)
+//        view.addAnnotation()
     }
 }
+
+
 
 struct MapView_Preview: PreviewProvider {
     static var previews: some View {
