@@ -18,12 +18,13 @@ struct OriginalTabView: View {
                     Image(systemName: "1.square.fill")
                     Text("First")
                 }
-            Text("Another Tab")
+            Profile()
                 .tabItem {
                     Image(systemName: "2.square.fill")
                     Text("Second")
                 }
-            Text("The Last Tab")
+            ChatView()
+                .environmentObject(ChatController())
                 .tabItem {
                     Image(systemName: "3.square.fill")
                     Text("Third")

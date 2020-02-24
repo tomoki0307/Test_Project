@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5551449123FA5A37009F609E /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551449023FA5A37009F609E /* SwiftUIView.swift */; };
+		5551449123FA5A37009F609E /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551449023FA5A37009F609E /* ChatView.swift */; };
+		55528FCE2403D0D100BA7523 /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55528FCD2403D0D100BA7523 /* ChatController.swift */; };
 		555FE29E23CCD3E90066183F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555FE29D23CCD3E90066183F /* AppDelegate.swift */; };
 		555FE2A023CCD3E90066183F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555FE29F23CCD3E90066183F /* SceneDelegate.swift */; };
 		555FE2A223CCD3E90066183F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555FE2A123CCD3E90066183F /* ContentView.swift */; };
@@ -40,7 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5551449023FA5A37009F609E /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		5551449023FA5A37009F609E /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		55528FCD2403D0D100BA7523 /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
 		555FE29A23CCD3E90066183F /* Test_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		555FE29D23CCD3E90066183F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		555FE29F23CCD3E90066183F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,8 +112,9 @@
 			isa = PBXGroup;
 			children = (
 				555FE29D23CCD3E90066183F /* AppDelegate.swift */,
-				5551449023FA5A37009F609E /* SwiftUIView.swift */,
+				5551449023FA5A37009F609E /* ChatView.swift */,
 				55C171AB23DC156B0096988A /* Profile.swift */,
+				55528FCD2403D0D100BA7523 /* ChatController.swift */,
 				555FE29F23CCD3E90066183F /* SceneDelegate.swift */,
 				55C171A923D090C80096988A /* MenuModaView.swift */,
 				555FE2A123CCD3E90066183F /* ContentView.swift */,
@@ -284,12 +287,13 @@
 			files = (
 				55C171A823D057FD0096988A /* OriginalTabView.swift in Sources */,
 				55C171AC23DC156B0096988A /* Profile.swift in Sources */,
-				5551449123FA5A37009F609E /* SwiftUIView.swift in Sources */,
+				5551449123FA5A37009F609E /* ChatView.swift in Sources */,
 				555FE29E23CCD3E90066183F /* AppDelegate.swift in Sources */,
 				55C171A623D050230096988A /* MapView.swift in Sources */,
 				555FE2A023CCD3E90066183F /* SceneDelegate.swift in Sources */,
 				55C171AA23D090C80096988A /* MenuModaView.swift in Sources */,
 				555FE2A223CCD3E90066183F /* ContentView.swift in Sources */,
+				55528FCE2403D0D100BA7523 /* ChatController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
