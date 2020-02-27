@@ -16,7 +16,7 @@ struct Profile: View {
                     .resizable()
                     .frame(width:155,height:155)
                     .clipShape(Circle())
-                    .padding(20)
+                    .padding(5)
                 HStack{
                     Spacer()
                     Image(systemName:"star.fill")
@@ -30,25 +30,25 @@ struct Profile: View {
                 Divider()
                 Text("「ワンコイン」スタイリング、デート前にいかがですか?")
                     .font(.footnote)
-                    .padding()
+                    .padding(5)
                 HStack{
                     Image("Hairstyle1")
                         .resizable()
-                        .aspectRatio(1, contentMode: .fit)
+                        .aspectRatio(0.66, contentMode: .fit)
                     Image("Hairstyle2")
                         .resizable()
-                        .aspectRatio(1, contentMode: .fit)
+                        .aspectRatio(0.66, contentMode: .fit)
                 }
-                .padding(.horizontal,20.0)
+                .padding(.horizontal,5.0)
                 HStack{
                     Image("Hairstyle3")
                         .resizable()
-                        .aspectRatio(1, contentMode: .fit)
+                        .aspectRatio(0.66, contentMode: .fit)
                     Image("Hairstyle4")
                         .resizable()
-                        .aspectRatio(1, contentMode: .fit)
+                        .aspectRatio(0.66, contentMode: .fit)
                 }
-                .padding(.horizontal,20.0)
+                .padding(.horizontal,5.0)
                 
                 HStack{
                     Text("500円")
@@ -60,14 +60,15 @@ struct Profile: View {
                         .foregroundColor(.black)
                     Spacer()
                 }
-                .padding(20)
-                NavigationLink(destination: MapView()) {
+                .padding(5)
+                NavigationLink(destination: ChatView()
+                .environmentObject(ChatController())) {
                     Text("コテ巻きスタイリング")
                 }
                 .frame(width:350,height:50)
                 .background(Color.white)
                 .cornerRadius(10)
-                .padding(10)
+                .padding(5)
             }.background(/*@START_MENU_TOKEN@*/Color.gray/*@END_MENU_TOKEN@*/)
             .navigationBarTitle("")
             .navigationBarHidden(true)

@@ -12,6 +12,7 @@ struct ContentView: View {
     @State private var show_modal: Bool = false
     @State private var MenuIndex = 0
     @State private var selected = 0
+    @State private var show_profile_nav: Bool = false
     var menu = ["sample1","sample2","sample3"]
     var test = "test1"
     var body: some View {
@@ -20,6 +21,7 @@ struct ContentView: View {
             VStack(alignment: .leading) {
                 Text("Map")
                     .font(.title)
+                    .padding(.horizontal, 10)
 //                NavigationView{
 //                    Form{
 //                        Picker(selection: $selected,
@@ -32,7 +34,6 @@ struct ContentView: View {
 //                }
 //                .frame(height: 50.0)
                 Button(action: {
-                    print("Button Pushed")
                     self.show_modal = true
                 }) {
                     HStack{
@@ -47,9 +48,16 @@ struct ContentView: View {
                 
                 
             }.frame(height:70)
-            MapView()
-            
-            
+//            Group {
+//                NavigationLink(destination: Profile(), isActive: self.$isActive) {
+//                    EmptyView()
+//                }
+//                MapView(annotations: getAnnotations(), isClicked: self.$isActive, selectedAnnotation: self.$selectedAnnotation)
+//            }
+            MapView(show_profile_nav: self.$show_profile_nav)
+            if show_profile_nav {
+                Text("test")
+            }
             
         }
     }

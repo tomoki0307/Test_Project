@@ -15,19 +15,19 @@ struct OriginalTabView: View {
         TabView {
             ContentView()
                 .tabItem {
-                    Image(systemName: "1.square.fill")
-                    Text("First")
+                    Image(systemName: "map")
+                    Text("map")
                 }
             Profile()
                 .tabItem {
-                    Image(systemName: "2.square.fill")
-                    Text("Second")
+                    Image(systemName: "person.crop.circle")
+                    Text("profile")
                 }
             ChatView()
                 .environmentObject(ChatController())
                 .tabItem {
-                    Image(systemName: "3.square.fill")
-                    Text("Third")
+                    Image(systemName: "bubble.left")
+                    Text("message")
                 }
         }
         .font(.headline)

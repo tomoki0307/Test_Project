@@ -17,17 +17,35 @@ struct MenuModalView: View {
                 Button(action:{
                     self.select = 0
                 }){
-                    Text("sample1")
+                    HStack{
+                        Text("sample1")
+                        Spacer()
+                        if self.select == 0 {
+                            Image(systemName:"checkmark")
+                        }
+                    }
                 }
                Button(action:{
                     self.select = 1
                 }){
-                    Text("sample2")
+                   HStack{
+                        Text("sample2")
+                        Spacer()
+                        if self.select == 1 {
+                            Image(systemName:"checkmark")
+                        }
+                    }
                 }
                 Button(action:{
                     self.select = 2
                 }){
-                    Text("sample3")
+                    HStack{
+                        Text("sample3")
+                        Spacer()
+                        if self.select == 2 {
+                            Image(systemName:"checkmark")
+                        }
+                    }
                 }
             }
             HStack {
