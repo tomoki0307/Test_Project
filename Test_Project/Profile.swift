@@ -10,7 +10,6 @@ import SwiftUI
 
 struct Profile: View {
     var body: some View {
-        NavigationView{
             VStack{
                 Image("Sumbnail")
                     .resizable()
@@ -70,10 +69,10 @@ struct Profile: View {
                 .cornerRadius(10)
                 .padding(5)
             }.background(/*@START_MENU_TOKEN@*/Color.gray/*@END_MENU_TOKEN@*/)
-            .navigationBarTitle("")
-            .navigationBarHidden(true)
-        }
+              .navigationBarTitle(Text("Profile"),displayMode:.inline)
         
+      
+//        .navigationBarHidden(true)
     }
 }
 

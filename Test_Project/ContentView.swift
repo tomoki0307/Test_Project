@@ -16,50 +16,47 @@ struct ContentView: View {
     var menu = ["sample1","sample2","sample3"]
     var test = "test1"
     var body: some View {
-        
-        VStack {
-            VStack(alignment: .leading) {
-                Text("Map")
-                    .font(.title)
-                    .padding(.horizontal, 10)
-//                NavigationView{
-//                    Form{
-//                        Picker(selection: $selected,
-//                               label:Text("Menu")){
-//                                ForEach(0..<menu.count){
-//                                    Text(self.menu[$0])
-//                                }
-//                        }
-//                    }.frame(height:60)
-//                }
-//                .frame(height: 50.0)
-                Button(action: {
-                    self.show_modal = true
-                }) {
-                    HStack{
-                        Text("Menu:")
-                        Spacer()
-                        Text("\(menu[selected])")
-                        Image(systemName:"arrowtriangle.down.fill")
+        NavigationView{
+            VStack {
+                VStack(alignment: .leading) {
+                    //                    Text("Map")
+                    //                        .font(.title)
+                    //                        .padding(.horizontal, 10)
+                    Button(action: {
+                        self.show_modal = true
+                    }) {
+                        HStack{
+                            Text("Menu:")
+                            Spacer()
+                            Text("\(menu[selected])")
+                            Image(systemName:"arrowtriangle.down.fill")
+                        }
+                    }.padding(.horizontal, 15.0).sheet(isPresented: self.$show_modal) {
+                        MenuModalView(select: self.$selected)
                     }
-                }.padding(.horizontal, 15.0).sheet(isPresented: self.$show_modal) {
-                    MenuModalView(select: self.$selected)
+                    
+                    
+                }.frame(height:40)
+                MapView(show_profile_nav: self.$show_profile_nav)
+                if show_profile_nav {
+                    
+                    NavigationLink(destination: Profile()) {
+                        HStack{
+                            Text("Bunta(??)")
+                            Spacer()
+                            Text("Profile")
+                            Image(systemName:"play")
+                        }
+                        .padding(.horizontal,20)
+                    }
                 }
-                
-                
-            }.frame(height:70)
-//            Group {
-//                NavigationLink(destination: Profile(), isActive: self.$isActive) {
-//                    EmptyView()
-//                }
-//                MapView(annotations: getAnnotations(), isClicked: self.$isActive, selectedAnnotation: self.$selectedAnnotation)
-//            }
-            MapView(show_profile_nav: self.$show_profile_nav)
-            if show_profile_nav {
-                Text("test")
             }
+            .navigationBarTitle(Text("MAP"),displayMode:.inline)
+            //            .navigationBarHidden(true)
             
         }
+        
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
